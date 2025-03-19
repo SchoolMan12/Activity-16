@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nesting If Else Statements</title>
     <script type="text/javascript">
-
-        var age=5;
-        var max_age=12;
-        var min_age=5;
-
-        if(age>=min_age) {
-         if(age<=max_age) {
-            document.write("You are old enough to play laser tag!");
+        // Initializing variables for age, min age, max age
+        var age = 5;
+        var max_age = 12;
+        var min_age = 5;
+        // If the age is greater than or equal to min age
+        if (age >= min_age) {
+            if (age <= max_age) {
+                // The age is less than the max age, so they are old enough
+                document.write("You are old enough to play laser tag!");
+            }
+            // It will write this if the age you set it to is below 12 & 5
+            else {
+                document.write("You are too old to play laser tag");
+            }
         }
-        else{
-            document.write("You are too old to play laser tag");
-        }            
-        }
-        </script>
+    </script>
 </head>
+
 <body>
-</body>    
+</body>
+
 </html>
